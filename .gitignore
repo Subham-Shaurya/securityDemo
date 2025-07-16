@@ -1,40 +1,53 @@
-# Ignore Maven or Gradle build output
+# Maven target directory
 /target/
-/build/
 
-# Ignore log files
+# Logs
 *.log
 
-# Ignore IntelliJ IDEA files
+# IDE-specific files
+
+# IntelliJ IDEA
 .idea/
 *.iml
 
-# Ignore Eclipse files
+# Eclipse
 .project
 .classpath
 .settings/
 
-# Ignore VS Code settings
+# VS Code
 .vscode/
 
-# Ignore OS generated files
+# OS-specific files
 .DS_Store
 Thumbs.db
 
-# Ignore environment and secret files
+# Environment and secrets
 .env
+*.env
 
-# Ignore test reports
-/test-output/
-.surefire-*
-
-# Ignore dependency directories (optional)
-node_modules/
-
-# Ignore compiled files
+# Compiled class files
 *.class
 
-# Ignore JAR/WAR files
+# Maven wrapper files (optional)
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# JAR/WAR files
 *.jar
 *.war
 *.ear
+
+# Test reports
+/test-output/
+/surefire-reports/
+
+# Backup or temp files
+*.swp
+*.bak
+*.tmp
+*.~*
+
+# Dependency lock files (optional)
+dependency-reduced-pom.xml
+release.properties
